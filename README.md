@@ -1,6 +1,20 @@
+# Editace pro mírně pokročilé
+
+- pokud nejsi přihlášen na GitHub, přihlaš se 
+- otevři soubor `index.html` v repozitáři `dgcpraha/dgcpraha.github.io` [-LINK-](https://github.com/dgcpraha/dgcpraha.github.io/blob/master/index.html)
+- stiskni tlačítko "Edit this file" (ikonka tužky vpravo nad částí s kódem) 
+- uprav co je potřeba
+- dole v části "Commit changes" stručně popiš v čem spočívá tvoje úprava
+- stiskni tlačítko "Propose file change"
+- na další stránce klikni "Create pull request"
+- požádej někoho ze správců aby změny potvrdil
+- vyčkej až je potvrdí + cca 2 minuty a bude to online
+
+
+
 # DGCP website
 
-Based on [Agency](https://startbootstrap.com/template-overviews/agency/) theme, based on Bootstrap
+Based on [Agency](https://startbootstrap.com/template-overviews/agency/) theme
 
 ## Status
 
