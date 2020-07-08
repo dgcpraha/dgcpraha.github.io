@@ -31,16 +31,21 @@
       for (i = 0; i < z.length; i++) {
         elmnt = z[i];
         /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
+        file = elmnt.getAttribute("dgcp-include-html");
         if (file) {
           /* Make an HTTP request using the attribute value as the file name: */
           xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+                nextThingsToDo()
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
               /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
+              elmnt.removeAttribute("dgcp-include-html");
               includeHTML();
             }
           }
@@ -48,6 +53,26 @@
           xhttp.send();
           /* Exit the function: */
           return;
+        }
+      }
+    }
+
+    function nextThingsToDo() {
+      scrollToAnchor("seznam");
+      colorActiveMembers();
+    }
+
+    function scrollToAnchor(anchor) {
+      let element_to_scroll_to = document.getElementById(anchor);
+      element_to_scroll_to.scrollIntoView();
+    }
+
+    function colorActiveMembers() {
+      ap = document.getElementsByTagName('td')
+      for (i = 0; i < ap.length; i++) {
+        a = ap[i];
+        if (a.innerText == "Aktivní") {
+          a.style.backgroundColor = "#c4ffc4";
         }
       }
     }
@@ -106,15 +131,14 @@
   </style>
 
   <!-- Services -->
-  <section class="page-section">
+  <section class="page-section" id="seznam">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Seznam členů</h2>
         </div>
       </div>
-      <div class="row mx-auto" w3-include-html="https://docs.google.com/spreadsheets/d/1dXTJ62G1-yoLsRPmrL4SbG7Nv02zlnrxAeMyzFb5ets/gviz/tq?tqx=out:html&tq&gid=1275437132">
-
+      <div class="row mx-auto" dgcp-include-html="https://docs.google.com/spreadsheets/d/1dXTJ62G1-yoLsRPmrL4SbG7Nv02zlnrxAeMyzFb5ets/gviz/tq?tqx=out:html&tq&gid=1275437132">
       </div>
     </div>
   </section>
