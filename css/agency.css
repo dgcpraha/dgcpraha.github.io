@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
@@ -80,6 +80,14 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.bg-dgcp {
+  background: #003d99;
+}
+
+.bg-dgcp-light {
+  background: #d2d2d2;
 }
 
 .btn {
