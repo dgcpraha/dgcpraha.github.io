@@ -240,10 +240,12 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Tréninky</h2>
-                <h3 class="section-subheading text-muted">Tréninky pořádáme pravidelně od jara do podzimu každý čtvrtek
-                    odpoledne v Běchovicích, přes zimu v hale v Hloubětíně. Vždy je přítomný někdo ze zkušných členů
-                    klubu, připravený věnovat se nováčkům s výukou základů, nebo pomoci pokročilejším hráčům se
-                    zdokonalením techniky.</h3>
+                <h3 class="section-subheading text-muted" id="training_text01">
+                    Tréninky pořádáme pravidelně od jara do podzimu každý čtvrtek odpoledne v Běchovicích,
+                    přes zimu v hale v Hloubětíně. Vždy je přítomný někdo ze zkušných členů klubu,
+                    připravený věnovat se nováčkům s výukou základů,
+                    nebo pomoci pokročilejším hráčům se zdokonalením techniky.
+                </h3>
             </div>
         </div>
         <div class="row text-center">
@@ -253,21 +255,18 @@
             <i class="fas fa-clock fa-stack-1x text-primary"></i>
           </span>
                 <h4 class="service-heading">Aktuální časy tréninků</h4>
-                <p class="text-muted">
-                    Od 28.5. každý <strong>čtvrtek od 17:00</strong> na discgolfovém hřišti v Běchovicích.
+                <p class="text-muted" id="training_text02">
+                    Od 28.5. každý čtvrtek od 17:00 na discgolfovém hřišti v Běchovicích.
                 </p>
-                <a class="btn btn-lg btn-primary" href="https://goo.gl/maps/qMnEpe4jvHNhLaYy7" target="_blank">
+                <a class="btn btn-lg btn-primary" href="https://goo.gl/maps/qMnEpe4jvHNhLaYy7" target="_blank" id="training_link">
                     <i class="fas fa-map-marked-alt"></i>
                     MAPA
                 </a>
-                <p class="text-muted">
-                    Doprava - stanice Běchovice-střed - vlakem 16 min z Masarykova nádraží / 10 min z nádraží Libeň,
+                <p class="text-muted" id="training_text03">
+                    Doprava - stanice Běchovice-střed -
+                    vlakem 16 min z Masarykova nádraží / 10 min z nádraží Libeň,
                     nebo autobusem 13 minut ze stanice Černý Most
                 </p>
-                <!--          <a class="btn btn-lg btn-primary" href="https://www.facebook.com/events/787003158481290/" target="_blank">-->
-                <!--            <i class="fab fa-facebook-f"></i>-->
-                <!--            Účast na tréninku prosím potvrďte zde-->
-                <!--          </a>-->
                 <p class="text-muted mt-5">
                     Aktuální časy nepravidelných tréninků, či jiných setkání naleznete v FB skupině Discgolf Club Praha.
                 </p>
@@ -381,6 +380,29 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/agency.min.js"></script>
+
+<script>
+    $.getJSON('https://spreadsheets.google.com/feeds/cells/1ap5UaQN-kFYGVCTo4MhQb1b_mJ-HTbdFAox_srUtwIs/1/public/full?alt=json', function(data) {
+        if (data.feed.entry[0].content.$t !== '@') {
+            $('#training_text01').text(data.feed.entry[0].content.$t);
+        }
+        if (data.feed.entry[1].content.$t !== '@') {
+            $('#training_text02').text(data.feed.entry[1].content.$t);
+        }
+        if (data.feed.entry[2].content.$t !== '@') {
+            $('#training_link').attr("href", data.feed.entry[2].content.$t);
+        } else {
+            $('#training_link').remove()
+        }
+        if (data.feed.entry[3].content.$t !== '@') {
+            $('#training_text03').text(data.feed.entry[3].content.$t);
+        } else {
+            $('#training_text03').remove()
+        }
+    })
+    .fail(function() { console.log('Failed getting training data');})
+    .done(function() { console.log('Done getting training data'); });
+</script>
 
 </body>
 </html>
