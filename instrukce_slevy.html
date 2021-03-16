@@ -23,62 +23,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /* Loop through a collection of all HTML elements: */
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("dgcp-include-html");
-                if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                                nextThingsToDo()
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /* Remove the attribute, and call this function once more: */
-                            elmnt.removeAttribute("dgcp-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /* Exit the function: */
-                    return;
-                }
-            }
-        }
-
-        function nextThingsToDo() {
-            scrollToAnchor("seznam");
-            colorActiveMembers();
-        }
-
-        function scrollToAnchor(anchor) {
-            let element_to_scroll_to = document.getElementById(anchor);
-            element_to_scroll_to.scrollIntoView();
-        }
-
-        function colorActiveMembers() {
-            ap = document.getElementsByTagName('td')
-            for (i = 0; i < ap.length; i++) {
-                a = ap[i];
-                if (a.innerText == "Aktivní") {
-                    a.style.backgroundColor = "#c4ffc4";
-                }
-            }
-        }
-    </script>
-
 </head>
 
 <body id="page-top">
@@ -127,24 +71,47 @@
     }
 </style>
 
-<!-- Services -->
-<section class="page-section" id="seznam">
+<section class="page-section" id="slevy">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Seznam členů</h2>
+                <h2 class="section-heading text-uppercase">Jak uplatnit slevy u klubových partnerů</h2>
             </div>
         </div>
-        <div class="row mx-auto"
-             dgcp-include-html="https://docs.google.com/spreadsheets/d/1dXTJ62G1-yoLsRPmrL4SbG7Nv02zlnrxAeMyzFb5ets/gviz/tq?tqx=out:html&tq&gid=1275437132">
-        </div>
+    </div>
+    <div class="container mb-5" id="ultimo">
+        <h3 class="section-heading text-uppercase">Ultimo.cz</h3>
+        <p>
+            10% sleva v internetovém i kamenném obchodě Ultimo na všechny disky a speciální slevy na ostatní sortiment.
+        </p>
+        <p>
+            Každý člen získá unikátní kód pro nákup na eshopu Ultimo.cz,
+            v kamenném obchodě pa nárok na slevu prokáže klubovým tagem.
+        </p>
+    </div>
+    <div class="container mb-5" id="discsport">
+        <h3 class="section-heading text-uppercase">Discsport.eu</h3>
+        <p>
+            V současnosti máme Silver členství, což nás opravňuje k nákupům se slevou 1.00 €/disk (na každý jednotlivý disk).
+            Nevztahuje se na sady ani jiné zboží, pouze disky!
+            Pokud budeme mít registrovaných alespoň 25 členů, kteří učiní alespoň 50 objednávek (celkem) za rok,
+            dosáhneme pro další rok na "zlato", což je 1.50 €/disk. Jinak setrváme na Silver.
+        </p>
+        <p>
+            Co pro to udělat?
+        </p>
+        <p>
+            Vytvořit si účet na DISCSPORT.EU a nahlásit své jméno a email použitý při registraci správci klubu - vojtechak@gmail.com.
+        </p>
+        <p>
+            Po přidání si zkontrolujte, zda máte ve svém účtu správně nastavený klub, a pokud ne, tak to opravte.
+            V případě problémů kontaktujte správce.
+        </p>
+        <p>
+            Sleva se uplatní automaticky při Checkoutu na základě porovnání emailové adresy.
+        </p>
     </div>
 </section>
-
-<script>
-    includeHTML();
-</script>
-
 
 <!-- Footer -->
 <footer class="footer">
