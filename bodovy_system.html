@@ -23,62 +23,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /* Loop through a collection of all HTML elements: */
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("dgcp-include-html");
-                if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                                nextThingsToDo()
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /* Remove the attribute, and call this function once more: */
-                            elmnt.removeAttribute("dgcp-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /* Exit the function: */
-                    return;
-                }
-            }
-        }
-
-        function nextThingsToDo() {
-            scrollToAnchor("seznam");
-            colorActiveMembers();
-        }
-
-        function scrollToAnchor(anchor) {
-            let element_to_scroll_to = document.getElementById(anchor);
-            element_to_scroll_to.scrollIntoView();
-        }
-
-        function colorActiveMembers() {
-            ap = document.getElementsByTagName('td')
-            for (i = 0; i < ap.length; i++) {
-                a = ap[i];
-                if (a.innerText == "Aktivní") {
-                    a.style.backgroundColor = "#c4ffc4";
-                }
-            }
-        }
-    </script>
-
 </head>
 
 <body id="page-top">
@@ -124,24 +68,42 @@
     }
 </style>
 
-<!-- Services -->
-<section class="page-section" id="seznam">
+<section class="page-section" id="ziskani">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Seznam členů</h2>
+                <h2 class="section-heading text-uppercase">Za co můžu získat body?</h2>
             </div>
         </div>
-        <div class="row mx-auto"
-             dgcp-include-html="https://docs.google.com/spreadsheets/d/1dXTJ62G1-yoLsRPmrL4SbG7Nv02zlnrxAeMyzFb5ets/gviz/tq?tqx=out:html&tq&gid=1275437132">
-        </div>
+    </div>
+    <div class="container mb-5" id="ultimo">
+        <h3 class="section-heading text-uppercase">Organizace klubové akce</h3>
+        <p>
+            Vždycky sháníme členy pro organizaci různorodých akcí. 
+            Ať už byste rádi zorganizovali jednorázovou akci 
+            (úklid hřiště s turnajem, discgolfovy pub quiz, bazar disců s doporvodným programem,...), 
+            nebo dokonce celou sérii (kliniku pro nové hráče, challenge o klubové tagy, putting ligu,...), 
+            za každou iniciativu jsme rádi. 
+        </p><p>
+            Stačí jen vyplnit 
+            <a href="#" target="_blank">tento formulář</a>
+            , ideálně alespoň měsíc před konáním akce. 
+            My tě pak zkontaktujeme, abychom doladili detaily akce a podpory klubu.
+        </p>
+    </div>
+    <div class="container mb-5" id="discsport">
+        <h3 class="section-heading text-uppercase">Pomoc na klubové akci/akci podporované klubem </h3>
+        <p>
+            Málokterá akce se obejde bez rozsáhlé základny pomocníků, 
+            kteří se účastní stavění a úklidů hřiště, spottování atd. 
+        </p><p>
+            Tyto akce budeme vypisovat pravidelně na začátku měsíce, 
+            abyste měli dostatek času se přihlásit. 
+            <!-- Rozpis akcí a formulář pro přihlášení přijde vždy …. ?  -->
+            Po ukončení přihlačování na akci se ti pak organizátor ozve pro doladění detailů.
+        </p>
     </div>
 </section>
-
-<script>
-    includeHTML();
-</script>
-
 
 <!-- Footer -->
 <footer class="footer">
