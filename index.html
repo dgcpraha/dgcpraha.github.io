@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    .ul-table {
+        list-style-type: none; /* disc !important */;
+    }
+
+    .li-table {
+        list-style-position: inside;
+    }
+    
+    .margin-both {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>
+
 <head>
 
     <meta charset="utf-8">
@@ -18,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
-          type='text/css'>
+        type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
@@ -28,264 +43,282 @@
 
 <body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img class="mx-auto" src="img/logo/dgcp-logo-final-white.png" alt="" style="height: 3em;">
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink always-shrink" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img class="mx-auto" src="img/logo/dgcp-logo-final-white.png" alt="" style="height: 3em;">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#onas">O nás</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#clenstvi">Členství</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#treninky">Tréninky</a>
-                </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link js-scroll-trigger" href="challenge.html#challenge">Klubová challenge</a>-->
-<!--                </li>-->
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="index.html#partneri">Partneři</a>
-                </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link js-scroll-trigger" href="scitani/index.html">Návštěvnost hřišť</a>-->
-<!--                </li>-->
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
-                </li>
-            </ul>
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="aktuality.html">Aktuality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="bodovy_system.html">Bodový systém</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#onas">O nás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#clenstvi">Členství</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#treninky">Tréninky</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#partneri">Partneři</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Header -->
-<header class="masthead">
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading text-uppercase">Disc Golf Club Praha</div>
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase">Disc Golf Club Praha</div>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<!-- Aktuality -->
-<!-- TODO: Pridat IG feed -->
+    <!-- Aktuality -->
+    <!-- TODO: Pridat IG feed -->
 
-<!-- O nas -->
-<section class="page-section" id="onas">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">O nás</h2>
-                <h3 class="section-subheading text-muted">
-                    DGC Praha sdružuje hráče discgolfu z Prahy a okolí za účelem propagace a rozvoje tohoto sportu.
-                </h3>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-calendar fa-stack-1x fa-inverse"></i>
-          </span>
-                <h4 class="service-heading">Pořádáme pravidelné tréninky</h4>
-                <p class="text-muted">
-                    Od jara do podzimu v Běchovicích, přes zimu v hale v Hloubětíně.
-                    Ukážeme základy, pomůžeme s technikou, poradíme s výběrem disků.
-                    Zkušení hráči jsou zde pro vás.
-                </p>
-                <p>
-                    <a class="btn btn-outline-primary" href="#treninky">Více o trénincích</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-          </span>
-                <h4 class="service-heading">Sdružujeme hráče discgolfu</h4>
-                <p class="text-muted">
-                    Všichni discgolfoví nadšenci v jedné organizaci. 
-                    Pořádáme i tmelící akce pro členy klubu. 
-                    Pojďme se poznat mezi sebou a ukázat Praze, že jsme tu a není nás málo!
-                </p>
-            </div>
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-chart-bar fa-stack-1x fa-inverse"></i>
-          </span>
-                <h4 class="service-heading">Pořádáme turnaje</h4>
-                <p class="text-muted">
-                    V Praze a blízkém okolí se podílíme na organizaci 
-                    Pražské amatérské DG ligy (PADL) cílené na začínající hráče a hráčky, 
-                    Pražské DG ligy (PDGL) cílené na pokročilejší hráče, 
-                    i turnajů nejvyšší české ligy s mezinárodní účastí.
-                </p>
-                <p>
-                    <a class="btn btn-outline-primary" href="nase_turnaje.html#turnaje" target="_blank">Naše turnaje</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Clenstvi -->
-<section class="bg-light page-section" id="clenstvi">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Členství</h2>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="mx-auto text-center">
-                <h4 class="service-heading">Členské poplatky</h4>
-                <p class="text-muted">
-                    Pro zabezpečení chodu klubu a podporu klubových aktivit vybíráme roční členské příspěvky. 
-                    Máme také připraveno zvýhodněné členství pro juniorské hráče, kteří v daném roce nedovrší 19 let. 
-                    Každý nový člen klubu získá klubový tag.
-                </p>
-                <p class="text-muted">
-                    S klubovým poplatkem je zároveň možné zaplatit členství v ČADG (více info 
-                    <a href="https://cadg.cz/prihlaska-do-asociace/" target="_blank">zde</a> ). 
-                    Členové ČADG něco málo ušetří na klubovém příspěvku a to samé platí i naopak. 
-                    Vyplatí se tedy pořídit si obě členství najednou. 
-                    Tuto možnost si můžete vybrat v rámci přihlašovacího formuláře.
-                </p>
-                <h5 class="text-muted">
-                    Základní členské příspěvky
-                </h5>
-                <div class="bg-dgcp-light rounded">
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-8 align-middle"><h6>Kolikáté narozeniny letos oslavíte?</h6></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4 text-primary font-weight-bold my-auto">19. a více</div>
-                        <div class="col-4 text-primary font-weight-bold my-auto">18. a méně</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 text-primary font-weight-bold my-auto">Jsem členem ČADG</div>
-                        <div class="col-4 my-auto">300 Kč</div>
-                        <div class="col-4 my-auto">100 Kč</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 text-primary font-weight-bold my-auto">Nejsem členem ČADG</div>
-                        <div class="col-4 my-auto">400 Kč</div>
-                        <div class="col-4 my-auto">200 Kč</div>
-                    </div>
+    <!-- O nas -->
+    <section class="page-section" id="onas">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">O nás</h2>
+                    <h3 class="section-subheading text-muted">
+                        DGC Praha sdružuje hráče discgolfu z Prahy a okolí za účelem propagace a rozvoje tohoto sportu.
+                    </h3>
                 </div>
-                
-                <h4 class="service-heading">Úrovně členství</h4>
-                <p class="text-muted">
-                    Od roku 2025 máme systém čtyř úrovní členství. 
-                    Bronzové členství získáváte automaticky zaplacením základního členského příspěvku. 
-                    V průběhu roku máte možnost sbírat body za aktivity, kterými pomáháte rozvíjet klub. 
-                    Roční součet těchto bodů určuje úroveň členství pro další rok. 
-                    Vyšší úrovně členství (silver a výše) si zároveň můžete koupit rovnou za uvedený poplatek (BIN = buy it now) a čerpat jejich výhody hned.
-                </p>
-                <div class="bg-dgcp-light rounded">
-                    <div class="row">
-                        <div class="col-3 text-primary font-weight-bold my-auto">Úroveň</div>
-                        <div class="col-3 text-primary font-weight-bold my-auto">Počet bodů</div>
-                        <div class="col-3 text-primary font-weight-bold my-auto">Výhody</div>
-                        <div class="col-3 text-primary font-weight-bold my-auto">BIN</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 text-primary font-weight-bold my-auto">Bronze</div>
-                        <div class="col-3 my-auto">0 - 4</div>
-                        <div class="col-3 my-auto text-left"><ul>
-                            <li>10% sleva v Ultimo</li>
-                            <li>sleva na oficiální akce DGCP* </li>
-                        </ul></div>
-                        <div class="col-3 my-auto">-</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 text-primary font-weight-bold my-auto">Silver</div>
-                        <div class="col-3 my-auto">5 - 11</div>
-                        <div class="col-3 my-auto text-left"><ul>
-                            <li>10% sleva v Ultimo </li>
-                            <li>sleva na oficiální akce DGCP* </li>
-                            <li>sleva na akce podporované DGCP**</li>
-                        </ul></div>
-                        <div class="col-3 my-auto">1500 Kč</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 text-primary font-weight-bold my-auto">Gold</div>
-                        <div class="col-3 my-auto">12 - 19</div>
-                        <div class="col-3 my-auto text-left"><ul>
-                            <li>15% sleva v Ultimo </li>
-                            <li>50% sleva na členský příspěvek DGCP</li>
-                            <li>sleva na oficiální akce DGCP</li>
-                            <li>sleva na akce podporované DGCP</li>
-                            <li>jeden kus malého merche zdarma (sport sack, ponožky atd.)</li>
-                        </ul></div>
-                        <div class="col-3 my-auto">3500 Kč</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 text-primary font-weight-bold my-auto">Diamond</div>
-                        <div class="col-3 my-auto">20+</div>
-                        <div class="col-3 my-auto text-left"><ul>
-                            <li>20% sleva v Ultimo </li>
-                            <li>členský příspěvek DGCP zdarma</li>
-                            <li>startovné zdarma oficiální akce DGCP</li>
-                            <li>sleva na akce podporované DGCP</li>
-                            <li>jeden kus velkého merche zdarma (dres atd.)</li>
-                        </ul></div>
-                        <div class="col-3 my-auto">6000 Kč</div>
-                    </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Pořádáme pravidelné tréninky</h4>
+                    <p class="text-muted">
+                        Od jara do podzimu v Běchovicích, přes zimu v hale v Hloubětíně.
+                        Ukážeme základy, pomůžeme s technikou, poradíme s výběrem disků.
+                        Zkušení hráči jsou zde pro vás.
+                    </p>
+                    <p>
+                        <a class="btn btn-xl btn-outline-primary" href="#treninky">Více o trénincích</a>
+                    </p>
                 </div>
-                <p class="section-subheading text-muted">
-                    * Mezi oficiální akce klubu se počítají takové akce, které organizují členové DGCP zdarma nebo za symbolické vstupné. Akce mohou být libovolného charakteru (úklid hřiště s turnajem, lekce pro nováčky, turnaj v šipkách, atd.)
-                </p>
-                <p class="section-subheading text-muted">
-                    ** Akce podporované klubem jsou větší turnaje a ligy podporované DGCP, jako například PDGL, PADL, nebo Běchovický trn. Zde si slevu určí organizátor sám. 
-                </p>
-
-                <a class="btn btn-xl btn-outline-primary mt-3"
-                   href="bodovy_system.html#ziskani">
-                    <i class="fa fa-bullhorn"></i>
-                    Za co můžu získat body?
-                </a>
-
-                <a class="btn btn-xl btn-primary mt-3"
-                   href="https://forms.gle/1EamaiqDLtE96piL7"
-                   target="_blank">
-                    <i class="fa fa-address-card"></i>
-                    Přihláška
-                </a>
-
-                <a class="btn btn-xl btn-outline-primary mt-3" href="seznam_clenu.html#seznam">
-                    <i class="fa fa-list"></i>
-                    Seznam členů
-                </a>
-
-                <p class="text-muted my-4">
-                    Po vyplnění přihlášky zašlete členský příspěvek na
-                    <a href="https://ib.fio.cz/ib/transparent?a=2601549495" target="_blank">transparentní účet
-                        2601549495 / 2010 </a>
-                    , ohledně předání členského tagu vás budeme kontaktovat.
-                </p>
-                
-                <p class="text-muted my-4">
-                    Členské výhody pobírají pouze členové se zaplaceným členstvím na daný rok.
-                    Členství se stává platným zaplacením členského příspěvku, nebo ziskem členství při dosažení kategorie Diamond v předchozím roce.
-                </p>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Sdružujeme hráče discgolfu</h4>
+                    <p class="text-muted">
+                        Všichni discgolfoví nadšenci v jedné organizaci.
+                        Pořádáme i tmelící akce pro členy klubu.
+                        Pojďme se poznat mezi sebou a ukázat Praze, že jsme tu a není nás málo!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-chart-bar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Pořádáme turnaje</h4>
+                    <p class="text-muted">
+                        V Praze a blízkém okolí se podílíme na organizaci
+                        Pražské amatérské DG ligy (PADL) cílené na začínající hráče a hráčky,
+                        Pražské DG ligy (PDGL) cílené na pokročilejší hráče,
+                        i turnajů nejvyšší české ligy s mezinárodní účastí.
+                    </p>
+                    <p>
+                        <a class="btn btn-xl btn-outline-primary" href="nase_turnaje.html">Naše turnaje</a>
+                    </p>
+                </div>
             </div>
         </div>
-        
-        <!-- <div class="row text-center">
+    </section>
+
+    <!-- Clenstvi -->
+    <section class="bg-light page-section" id="clenstvi">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Členství</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="mx-auto text-center">
+                    <h4 class="service-heading">Členské poplatky</h4>
+                    <p class="text-muted">
+                        Pro zabezpečení chodu klubu a podporu klubových aktivit vybíráme roční členské příspěvky.
+                        Máme také připraveno zvýhodněné členství pro juniorské hráče, kteří v daném roce nedovrší 19
+                        let.
+                        Každý nový člen klubu získá klubový tag.
+                    </p>
+                    <p class="text-muted">
+                        S klubovým poplatkem je zároveň možné zaplatit členství v ČADG (více info
+                        <a href="https://cadg.cz/prihlaska-do-asociace/" target="_blank">zde</a> ).
+                        Členové ČADG něco málo ušetří na klubovém příspěvku a to samé platí i naopak.
+                        Vyplatí se tedy pořídit si obě členství najednou.
+                        Tuto možnost si můžete vybrat v rámci přihlašovacího formuláře.
+                    </p>
+                    <h5 class="text-muted">
+                        Základní členské příspěvky podle oslavených narozenin v letošním roce
+                    </h5>
+
+                    <table class="table table-bordered text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th></th>
+                                <th>19. a více</th>
+                                <th>18. a méně</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Jsem členem ČADG</strong></td>
+                                <td>300 Kč</td>
+                                <td>100 Kč</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nejsem členem ČADG</strong></td>
+                                <td>400 Kč</td>
+                                <td>200 Kč</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 class="service-heading">Úrovně členství</h4>
+                    <p class="text-muted">
+                        Od roku 2025 máme systém čtyř úrovní členství.
+                        Bronzové členství získáváte automaticky zaplacením základního členského příspěvku.
+                        V průběhu roku máte možnost sbírat body za aktivity, kterými pomáháte rozvíjet klub.
+                        Roční součet těchto bodů určuje úroveň členství pro další rok.
+                        Vyšší úrovně členství (silver a výše) si zároveň můžete koupit rovnou za uvedený poplatek (BIN =
+                        buy it now) a čerpat jejich výhody hned.
+                    </p>
+
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Úroveň</th>
+                                <th>Počet bodů</th>
+                                <th>Výhody</th>
+                                <th>BIN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bronze</td>
+                                <td>0 - 4</td>
+                                <td>
+                                    <ul class="ul-table">
+                                        <li class="li-table">10% sleva v Ultimo</li>
+                                        <li class="li-table">sleva na oficiální akce DGCP*</li>
+                                    </ul>
+                                </td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Silver</td>
+                                <td>5 - 11</td>
+                                <td>
+                                    <ul class="ul-table">
+                                        <li class="li-table">10% sleva v Ultimo</li>
+                                        <li class="li-table">sleva na oficiální akce DGCP*</li>
+                                        <li class="li-table">sleva na akce podporované DGCP**</li>
+                                    </ul>
+                                </td>
+                                <td>1500 Kč</td>
+                            </tr>
+                            <tr>
+                                <td>Gold</td>
+                                <td>12 - 19</td>
+                                <td>
+                                    <ul class="ul-table">
+                                        <li class="li-table">15% sleva v Ultimo</li>
+                                        <li class="li-table">50% sleva na členský příspěvek DGCP</li>
+                                        <li class="li-table">sleva na oficiální akce DGCP</li>
+                                        <li class="li-table">sleva na akce podporované DGCP</li>
+                                        <li class="li-table">jeden kus malého merche zdarma (sport sack, ponožky atd.)</li>
+                                    </ul>
+                                </td>
+                                <td>3500 Kč</td>
+                            </tr>
+                            <tr>
+                                <td>Diamond</td>
+                                <td>20+</td>
+                                <td>
+                                    <ul class="ul-table">
+                                        <li class="li-table">20% sleva v Ultimo</li>
+                                        <li class="li-table">členský příspěvek DGCP zdarma</li>
+                                        <li class="li-table">startovné zdarma oficiální akce DGCP</li>
+                                        <li class="li-table">sleva na akce podporované DGCP</li>
+                                        <li class="li-table">jeden kus velkého merche zdarma (dres atd.)</li>
+                                    </ul>
+                                </td>
+                                <td>6000 Kč</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="section-subheading text-muted">
+                        * Mezi oficiální akce klubu se počítají takové akce, které organizují členové DGCP zdarma nebo
+                        za symbolické vstupné. Akce mohou být libovolného charakteru (úklid hřiště s turnajem, lekce pro
+                        nováčky, turnaj v šipkách, atd.)
+                    </p>
+                    <p class="section-subheading text-muted">
+                        ** Akce podporované klubem jsou větší turnaje a ligy podporované DGCP, jako například PDGL,
+                        PADL, nebo Běchovický trn. Zde si slevu určí organizátor sám.
+                    </p>
+
+                    <a class="btn btn-xl btn-outline-primary mt-3 margin-both" href="bodovy_system.html#ziskani">
+                        <i class="fa fa-bullhorn"></i>
+                        Bodový systém
+                    </a>
+
+                    <a class="btn btn-xl btn-primary mt-3 margin-both" href="https://forms.gle/1EamaiqDLtE96piL7" target="_blank">
+                        <i class="fa fa-address-card"></i>
+                        Přihláška do klubu
+                    </a>
+
+                    <a class="btn btn-xl btn-outline-primary mt-3 margin-both" href="seznam_clenu.html#seznam">
+                        <i class="fa fa-list"></i>
+                        Seznam členů
+                    </a>
+
+                    <p class="text-muted my-4">
+                        Po vyplnění přihlášky zašlete členský příspěvek na
+                        <a href="https://ib.fio.cz/ib/transparent?a=2601549495" target="_blank">transparentní účet
+                            2601549495 / 2010 </a>
+                        , ohledně předání členského tagu vás budeme kontaktovat.
+                    </p>
+
+                    <p class="text-muted my-4">
+                        Členské výhody pobírají pouze členové se zaplaceným členstvím na daný rok.
+                        Členství se stává platným zaplacením členského příspěvku, nebo ziskem členství při dosažení
+                        kategorie Diamond v předchozím roce.
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="row text-center">
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-tag fa-stack-1x text-primary"></i>
@@ -317,252 +350,257 @@
             </div>
         </div> -->
 
-    </div>
-</section>
-
-<!-- Treninky -->
-<section class="page-section" id="treninky">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Tréninky</h2>
-                <p class="section-subheading text-muted" id="training_text01">
-                    Tréninky pořádáme od jara do podzimu na vybraných pražských hřištích, 
-                    přes zimu v hale v Hloubětíně. 
-                    Vždy je přítomný někdo ze zkušených členů klubu, 
-                    připravený věnovat se nováčkům s výukou základů, 
-                    nebo pomoci pokročilejším hráčům se zdokonalením techniky.
-                </p>
-            </div>
         </div>
-        <div class="row text-center">
-            <div class="mx-auto">
-          <span class="fa-stack fa-3x">
-            <i class="fas fa-stack-6x"></i>
-            <i class="fas fa-clock fa-stack-1x text-primary"></i>
-          </span>
-                <h4 class="service-heading">Aktuální časy tréninků</h4>
-                <p class="text-muted" id="training_text02">
-                    Každý čtvrtek od 18:00 do 19:30 v Bazéně Hloubětín (Hloubětínská 80). 
-                    Tréninky začínají 23. 1. 2025 a budou trvat do 27. 3. 2025.
-                </p>
-                <iframe style="border:none" src="https://frame.mapy.cz/s/hecatugoko" width="500" height="333" frameborder="0"></iframe>
-                <p class="text-muted" id="training_text03">
-                    Doprava - 
-                    Metro: linka B, stanice Hloubětín; 
-                    Tramvaj: linky 7, 12 stanice Hloubětín (přibližně 150m od stanice metra); 
-                    Autobus: 110, 141 a 259
-                </p>
-                
-                
-                <!-- <iframe style="border:none" src="https://frame.mapy.cz/s/balajakaza" width="500" height="333" frameborder="0"></iframe> -->
+    </section>
 
-                <!-- <p class="text-muted" id="training_text03">
+    <!-- Treninky -->
+    <section class="page-section" id="treninky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Tréninky</h2>
+                    <p class="section-subheading text-muted" id="training_text01">
+                        Tréninky pořádáme od jara do podzimu na vybraných pražských hřištích,
+                        přes zimu v hale v Hloubětíně.
+                        Vždy je přítomný někdo ze zkušených členů klubu,
+                        připravený věnovat se nováčkům s výukou základů,
+                        nebo pomoci pokročilejším hráčům se zdokonalením techniky.
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="mx-auto">
+                    <span class="fa-stack fa-3x">
+                        <i class="fas fa-stack-6x"></i>
+                        <i class="fas fa-clock fa-stack-1x text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">Aktuální časy tréninků</h4>
+                    <p class="text-muted" id="training_text02">
+                        Každý čtvrtek od 18:00 do 19:30 v Bazéně Hloubětín (Hloubětínská 80).
+                        Tréninky začínají 23. 1. 2025 a budou trvat do 27. 3. 2025.
+                    </p>
+                    <iframe style="border:none" src="https://frame.mapy.cz/s/hecatugoko" width="500" height="333"
+                        frameborder="0"></iframe>
+                    <p class="text-muted" id="training_text03">
+                        Doprava -
+                        Metro: linka B, stanice Hloubětín;
+                        Tramvaj: linky 7, 12 stanice Hloubětín (přibližně 150m od stanice metra);
+                        Autobus: 110, 141 a 259
+                    </p>
+
+
+                    <!-- <iframe style="border:none" src="https://frame.mapy.cz/s/balajakaza" width="500" height="333" frameborder="0"></iframe> -->
+
+                    <!-- <p class="text-muted" id="training_text03">
                     Doprava - stanice Běchovice-střed -
                     vlakem 16 min z Masarykova nádraží / 10 min z nádraží Libeň,
                     nebo autobusem 13 minut ze stanice Černý Most
                 </p> -->
 
-                <p class="text-muted mt-5">
-                    Aktuální časy nepravidelných tréninků, či jiných setkání naleznete v FB skupině Pražský discgolf.
-                </p>
-                <a class="btn btn-lg btn-primary" href="https://www.facebook.com/groups/230785370665041"
-                   target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                    Skupina Pražský discgolf
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Partneri -->
-<section class="bg-light page-section" id="partneri">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Kluboví partneři</h2>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-sm mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" href="https://www.ultimo.cz" target="_blank">
-                        <img class="img-fluid" src="img/partners/ultimo_logo.png" alt="Ultimo.cz">
+                    <p class="text-muted mt-5">
+                        Aktuální časy nepravidelných tréninků, či jiných setkání naleznete v FB skupině Pražský
+                        discgolf.
+                    </p>
+                    <a class="btn btn-lg btn-primary" href="https://www.facebook.com/groups/230785370665041"
+                        target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        Skupina Pražský discgolf
                     </a>
-                    <div class="portfolio-caption">
-                        <h4 class="portfolio-caption">Ultimo.cz</h4>
-                        <p class="portfolio-caption">
-                            Sleva v internetovém i kamenném obchodě Ultimo na všechny disky
-                            a speciální slevy na ostatní sortiment.
-                        </p>
-                        <a class="btn btn-outline-primary" href="instrukce_slevy.html#ultimo">Jak uplatnit slevu</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" href="https://www.discsport.eu" target="_blank">
-                        <img class="img-fluid" src="img/partners/discsport_logo.png" alt="Discsport.eu">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4 class="portfolio-caption">Discsport.eu</h4>
-                        <p class="portfolio-caption">
-                            Sleva ve výši 1€ na každý jednotlivý disk
-                        </p>
-                        <a class="btn btn-outline-primary" href="instrukce_slevy.html#discsport">Jak uplatnit slevu</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" >
-                        <img class="img-fluid" src="img/partners/plain_logo.png" alt="Zde může být Vaše logo">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4 class="portfolio-caption">Staňte se partnerem</h4>
-                        <p class="portfolio-caption">
-                            Spojte své jméno s naším klubem a podpořte rozvoj discgolfu v Praze!
-                        </p>
-                        <a class="btn btn-outline-primary" href="#kontakt">Kontaktujte nás</a>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- Kontakt -->
-<section class="page-section" id="kontakt">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Kontakt</h2>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm-6">
-          <span class="fa-stack fa-3x">
-            <i class="fas fa-stack-6x"></i>
-            <i class="fas fa-at fa-stack-1x text-primary"></i>
-          </span>
-                <h4 class="service-heading">info@dgcp.cz</h4>
-                <p class="text-muted">Veškeré dotazy prosím směřujte na tuto emailovou adresu</p>
-            </div>
-            <div class="col-sm-6">
-          <span class="fa-stack fa-3x">
-            <i class="fas fa-stack-6x"></i>
-            <i class="fas fa-home fa-stack-1x text-primary"></i>
-          </span>
-                <h4 class="service-heading">Discgolf club Praha (DGC Praha), z. s.</h4>
-                <p class="text-muted">
-                    Na Šmukýřce 931/37, Košíře,<br>
-                    150 00 Praha 5<br>
-                    IČO: 07060661<br>
-                    <a href="https://ib.fio.cz/ib/transparent?a=2601549495" target="_blank">BÚ: 2601549495 / 2010</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-lg-12 text-center">
-                <h3 class="section-heading text-uppercase">Výkonná rada</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/Jakub_sq.jpg" alt="">
-                    <h4>Jakub Koštel</h4>
-                    <p class="text-muted">Pokladník</p>
+    <!-- Partneri -->
+    <section class="bg-light page-section" id="partneri">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Kluboví partneři</h2>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/Pelepin_sq.png" alt="">
-                    <h4>Jan Pelant</h4>
-                    <p class="text-muted">Předseda</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/Syky_sq.png" alt="">
-                    <h4>Jakub Sýkora</h4>
-                    <p class="text-muted">Sekretář</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/profile.php?id=61571287846047" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
+            <div class="row text-center">
+                <div class="col-sm mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="https://www.ultimo.cz" target="_blank">
+                            <img class="img-fluid" src="img/partners/ultimo_logo.png" alt="Ultimo.cz">
                         </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/discgolfclubpraha/" target="_blank">
-                            <i class="fab fa-instagram"></i>
+                        <div class="portfolio-caption">
+                            <h4 class="portfolio-caption">Ultimo.cz</h4>
+                            <p class="portfolio-caption">
+                                Sleva v internetovém i kamenném obchodě Ultimo na všechny disky
+                                a speciální slevy na ostatní sortiment.
+                            </p>
+                            <a class="btn btn-outline-primary" href="instrukce_slevy.html#ultimo">Jak uplatnit slevu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="https://www.discsport.eu" target="_blank">
+                            <img class="img-fluid" src="img/partners/discsport_logo.png" alt="Discsport.eu">
                         </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <span class="copyright">© <span id="year"></span> - Discgolf club Praha (DGC Praha), z. s.</span>
+                        <div class="portfolio-caption">
+                            <h4 class="portfolio-caption">Discsport.eu</h4>
+                            <p class="portfolio-caption">
+                                Sleva ve výši 1€ na každý jednotlivý disk
+                            </p>
+                            <a class="btn btn-outline-primary" href="instrukce_slevy.html#discsport">Jak uplatnit
+                                slevu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link">
+                            <img class="img-fluid" src="img/partners/plain_logo.png" alt="Zde může být Vaše logo">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4 class="portfolio-caption">Staňte se partnerem</h4>
+                            <p class="portfolio-caption">
+                                Spojte své jméno s naším klubem a podpořte rozvoj discgolfu v Praze!
+                            </p>
+                            <a class="btn btn-outline-primary" href="#kontakt">Kontaktujte nás</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
-</footer>
-
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    </section>
 
 
-<!-- Custom scripts for this template -->
-<script src="js/agency.min.js"></script>
+    <!-- Kontakt -->
+    <section class="page-section" id="kontakt">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Kontakt</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-6">
+                    <span class="fa-stack fa-3x">
+                        <i class="fas fa-stack-6x"></i>
+                        <i class="fas fa-at fa-stack-1x text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">info@dgcp.cz</h4>
+                    <p class="text-muted">Veškeré dotazy prosím směřujte na tuto emailovou adresu</p>
+                </div>
+                <div class="col-sm-6">
+                    <span class="fa-stack fa-3x">
+                        <i class="fas fa-stack-6x"></i>
+                        <i class="fas fa-home fa-stack-1x text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">Discgolf club Praha (DGC Praha), z. s.</h4>
+                    <p class="text-muted">
+                        Na Šmukýřce 931/37, Košíře,<br>
+                        150 00 Praha 5<br>
+                        IČO: 07060661<br>
+                        <a href="https://ib.fio.cz/ib/transparent?a=2601549495" target="_blank">BÚ: 2601549495 /
+                            2010</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading text-uppercase">Výkonná rada</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/team/Jakub_sq.jpg" alt="">
+                        <h4>Jakub Koštel</h4>
+                        <p class="text-muted">Pokladník</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/team/Pelepin_sq.png" alt="">
+                        <h4>Jan Pelant</h4>
+                        <p class="text-muted">Předseda</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/team/Syky_sq.png" alt="">
+                        <h4>Jakub Sýkora</h4>
+                        <p class="text-muted">Sekretář</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-    $.getJSON('https://spreadsheets.google.com/feeds/cells/1ap5UaQN-kFYGVCTo4MhQb1b_mJ-HTbdFAox_srUtwIs/1/public/full?alt=json', function(data) {
-        if (data.feed.entry[0].content.$t !== '@') {
-            $('#training_text01').text(data.feed.entry[0].content.$t);
-        }
-        if (data.feed.entry[1].content.$t !== '@') {
-            $('#training_text02').text(data.feed.entry[1].content.$t);
-        }
-        if (data.feed.entry[2].content.$t !== '@') {
-            $('#training_link').attr("href", data.feed.entry[2].content.$t);
-        } else {
-            $('#training_link').remove()
-        }
-        if (data.feed.entry[3].content.$t !== '@') {
-            $('#training_text03').text(data.feed.entry[3].content.$t);
-        } else {
-            $('#training_text03').remove()
-        }
-    })
-    .fail(function() { console.log('Failed getting training data');})
-    .done(function() { console.log('Done getting training data'); });
-</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/profile.php?id=61571287846047" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/discgolfclubpraha/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <span class="copyright">© <span id="year"></span> - Discgolf club Praha (DGC Praha), z. s.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+    <script>
+        $.getJSON('https://spreadsheets.google.com/feeds/cells/1ap5UaQN-kFYGVCTo4MhQb1b_mJ-HTbdFAox_srUtwIs/1/public/full?alt=json', function (data) {
+            if (data.feed.entry[0].content.$t !== '@') {
+                $('#training_text01').text(data.feed.entry[0].content.$t);
+            }
+            if (data.feed.entry[1].content.$t !== '@') {
+                $('#training_text02').text(data.feed.entry[1].content.$t);
+            }
+            if (data.feed.entry[2].content.$t !== '@') {
+                $('#training_link').attr("href", data.feed.entry[2].content.$t);
+            } else {
+                $('#training_link').remove()
+            }
+            if (data.feed.entry[3].content.$t !== '@') {
+                $('#training_text03').text(data.feed.entry[3].content.$t);
+            } else {
+                $('#training_text03').remove()
+            }
+        })
+            .fail(function () { console.log('Failed getting training data'); })
+            .done(function () { console.log('Done getting training data'); });
+    </script>
 
 </body>
+
 </html>
