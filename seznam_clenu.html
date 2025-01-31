@@ -81,6 +81,12 @@
                 a = ap[i];
                 if (a.innerText == "Aktivní") {
                     a.style.backgroundColor = "#c4ffc4";
+                } else if (a.innerText.toLowerCase() == "bronze") {
+                    a.style.backgroundColor = "#f6b26b";
+                } else if (a.innerText.toLowerCase() == "silver") {
+                    a.style.backgroundColor = "#cccccc";
+                } else if (a.innerText.toLowerCase() == "gold") {
+                    a.style.backgroundColor = "#ffd700";
                 }
             }
         }
